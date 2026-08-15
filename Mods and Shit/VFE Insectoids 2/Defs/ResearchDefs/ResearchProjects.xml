@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>Ferny_Creeper</defName>
+		<label>creeper</label>
+		<tab>VanillaExpanded</tab>
+		<description>Construct creepers: living hive organs that expand creep, feed surrounding hive structures, and produce insect jelly when fully established.</description>
+		<baseCost>350</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<prerequisites>
+			<li>VFEI2_BasicHivetech</li>
+		</prerequisites>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>4.40</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_GlowPod</defName>
+		<label>glow pod</label>
+		<tab>VanillaExpanded</tab>
+		<description>Cultivate small bioluminescent glow pods, including dark glow pods when the black hive is present.</description>
+		<baseCost>200</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<prerequisites>
+			<li>VFEI2_BasicHivetech</li>
+		</prerequisites>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>4.85</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_DeepHeater</defName>
+		<label>deep heater</label>
+		<tab>VanillaExpanded</tab>
+		<description>Dig deep heater vents that tap underground heat through insectoid bioengineering.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<prerequisites>
+			<li>VFEI2_BasicHivetech</li>
+		</prerequisites>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>5.30</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_HiveStructure</defName>
+		<label>hive structure</label>
+		<tab>VanillaExpanded</tab>
+		<description>Build basic hive walls, hive doors, hivestone walls, and insect jelly walls.</description>
+		<baseCost>350</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<prerequisites>
+			<li>VFEI2_BasicHivetech</li>
+		</prerequisites>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>6.65</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_JellyFarm</defName>
+		<label>jelly farm</label>
+		<tab>VanillaExpanded</tab>
+		<description>Grow organic jelly farms that steadily produce insect jelly from established creep.</description>
+		<baseCost>350</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<prerequisites>
+			<li>VFEI2_BasicHivetech</li>
+		</prerequisites>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>7.10</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_Thornspitter</defName>
+		<label>thornspitter</label>
+		<tab>VanillaExpanded</tab>
+		<description>Raise thornspitter mounds for organic point defense.</description>
+		<baseCost>350</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<prerequisites>
+			<li>VFEI2_BasicHivetech</li>
+		</prerequisites>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>7.55</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_BurrowWalls</defName>
+		<label>burrow walls</label>
+		<tab>VanillaExpanded</tab>
+		<description>Pack dirt, stone, and insectoid secretion into durable burrow walls. Their low flammability makes them far more fire resistant than ordinary hive walls.</description>
+		<baseCost>350</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ferny_HiveStructure</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>6.65</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_LargeGlowPod</defName>
+		<label>large glow pod</label>
+		<tab>VanillaExpanded</tab>
+		<description>Cultivate larger glow pods, including large dark glow pods when the black hive is present.</description>
+		<baseCost>350</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ferny_GlowPod</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>4.85</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_GlowPodFormation</defName>
+		<label>glow pod formation</label>
+		<tab>VanillaExpanded</tab>
+		<description>Grow dense glow pod formations, including dark glow pod formations when the black hive is present.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ferny_LargeGlowPod</li>
+		</prerequisites>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>4.85</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_FoamPod</defName>
+		<label>foam pod</label>
+		<tab>VanillaExpanded</tab>
+		<description>Grow firefoam pods that burst into flame-retardant foam when fire draws near.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ferny_GlowPod</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>4.40</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_HeatPod</defName>
+		<label>heat pod</label>
+		<tab>VanillaExpanded</tab>
+		<description>Grow heat pods that provide local light and warmth for a limited time.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ferny_GlowPod</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>5.30</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_Jellyspreader</defName>
+		<label>jellyspreader</label>
+		<tab>VanillaExpanded</tab>
+		<description>Grow jellyspreaders that convert established creep into soft insect jelly terrain.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ferny_Creeper</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>3.95</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_TendrilFarm</defName>
+		<label>tendril farm</label>
+		<tab>VanillaExpanded</tab>
+		<description>Cultivate tendril farms that slowly seed nearby creep with harvestable tendrilmoss.</description>
+		<baseCost>350</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ferny_Creeper</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>3.50</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_ThornPod</defName>
+		<label>thorn pod</label>
+		<tab>VanillaExpanded</tab>
+		<description>Grow thorn pods that release volleys of sharp chitin when enemies approach.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ferny_Thornspitter</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>7.55</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_KemianHive</defName>
+		<label>kemian hive</label>
+		<tab>VanillaExpanded</tab>
+		<description>Build artificial hives that spawn Kemian geneline insectoids.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>VFEI2_StandardHivetech</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>5.95</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_NuchadusHive</defName>
+		<label>nuchadus hive</label>
+		<tab>VanillaExpanded</tab>
+		<description>Build artificial hives that spawn Nuchadus geneline insectoids.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>VFEI2_StandardHivetech</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>6.40</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_XanidesHive</defName>
+		<label>xanides hive</label>
+		<tab>VanillaExpanded</tab>
+		<description>Build artificial hives that spawn Xanides geneline insectoids.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>VFEI2_StandardHivetech</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>6.85</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_GlowPodSpire</defName>
+		<label>glow pod spire</label>
+		<tab>VanillaExpanded</tab>
+		<description>Grow towering glow pod spires that can light an area brightly enough for crops.</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ferny_GlowPodFormation</li>
+		</prerequisites>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>4.85</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_JellyMorpher</defName>
+		<label>jelly morpher</label>
+		<tab>VanillaExpanded</tab>
+		<description>Grow jelly morphers that refine insect jelly into royal insect jelly.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>VFEI2_StandardHivetech</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>5.50</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_Hivenode</defName>
+		<label>hivenode</label>
+		<tab>VanillaExpanded</tab>
+		<description>Grow hivenodes that nourish nearby insectoid structures and remove their maintenance needs.</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ferny_NuchadusHive</li>
+		</prerequisites>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>6.40</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_Petroglypher</defName>
+		<label>petroglypher</label>
+		<tab>VanillaExpanded</tab>
+		<description>Grow petroglyphers that reinforce nearby natural rock into hivestone.</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ferny_XanidesHive</li>
+		</prerequisites>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>6.85</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_StaticPod</defName>
+		<label>staticpod</label>
+		<tab>VanillaExpanded</tab>
+		<description>Grow staticpods that generate small amounts of organic electricity.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ferny_GlowPod</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>5.75</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_Thornworm</defName>
+		<label>thornworm</label>
+		<tab>VanillaExpanded</tab>
+		<description>Raise thornworm mounds that unleash rapidly growing chitin thorns.</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ferny_Thornspitter</li>
+			<li>VFEI2_ExoticHivetech</li>
+		</prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>8.00</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_Vilelobber</defName>
+		<label>vilelobber</label>
+		<tab>VanillaExpanded</tab>
+		<description>Raise vilelobber mounds that spit long-range corrosive acid blobs.</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ferny_Thornspitter</li>
+			<li>Ferny_KemianHive</li>
+		</prerequisites>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>7.55</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_RoyalJellyspreader</defName>
+		<label>royal jellyspreader</label>
+		<tab>VanillaExpanded</tab>
+		<description>Grow royal jellyspreaders that enrich insect jelly terrain into royal jelly terrain.</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ferny_Jellyspreader</li>
+		</prerequisites>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>3.95</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_RoyalJellyWall</defName>
+		<label>royal jelly wall</label>
+		<tab>VanillaExpanded</tab>
+		<description>Build hard, beautiful, fireproof walls from royal insect jelly.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Ferny_BurrowWalls</li>
+		</prerequisites>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>6.25</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ResearchProjectDef>
+							<defName>Ferny_BlackHive</defName>
+							<label>black hive</label>
+							<tab>VanillaExpanded</tab>
+							<description>Build artificial hives that spawn black hive insectoids.</description>
+							<baseCost>500</baseCost>
+							<techLevel>Industrial</techLevel>
+							<prerequisites>
+								<li>VFEI2_StandardHivetech</li>
+							</prerequisites>
+							<researchViewX>9.00</researchViewX>
+							<researchViewY>7.30</researchViewY>
+						</ResearchProjectDef>
+						<ResearchProjectDef>
+							<defName>Ferny_BioMechDisruptor</defName>
+							<label>bio mech disruptor</label>
+							<tab>VanillaExpanded</tab>
+							<description>Grow bio mech disruptors that weaken mechanoids in their radius.</description>
+							<baseCost>500</baseCost>
+							<techLevel>Industrial</techLevel>
+							<prerequisites>
+								<li>Ferny_BlackHive</li>
+							</prerequisites>
+							<researchViewX>10.00</researchViewX>
+							<researchViewY>7.30</researchViewY>
+						</ResearchProjectDef>
+						<ResearchProjectDef>
+							<defName>Ferny_BlackCreeper</defName>
+							<label>black creeper</label>
+							<tab>VanillaExpanded</tab>
+							<description>Grow black creepers that convert existing creep into black creep.</description>
+							<baseCost>350</baseCost>
+							<techLevel>Industrial</techLevel>
+							<prerequisites>
+								<li>Ferny_BlackHive</li>
+								<li>Ferny_Creeper</li>
+							</prerequisites>
+							<researchViewX>10.00</researchViewX>
+							<researchViewY>7.75</researchViewY>
+						</ResearchProjectDef>
+						<ResearchProjectDef>
+							<defName>Ferny_BlackDefiler</defName>
+							<label>black defiler</label>
+							<tab>VanillaExpanded</tab>
+							<description>Raise black defiler mounds that spit toxic black hive bile.</description>
+							<baseCost>700</baseCost>
+							<techLevel>Industrial</techLevel>
+							<prerequisites>
+								<li>Ferny_BlackHive</li>
+								<li>Ferny_Thornspitter</li>
+							</prerequisites>
+							<researchViewX>10.00</researchViewX>
+							<researchViewY>8.20</researchViewY>
+						</ResearchProjectDef>
+						<ResearchProjectDef>
+							<defName>Ferny_BlackJellyMorpher</defName>
+							<label>black jelly morpher</label>
+							<tab>VanillaExpanded</tab>
+							<description>Grow black jelly morphers that refine insect jelly into black insect jelly.</description>
+							<baseCost>700</baseCost>
+							<techLevel>Industrial</techLevel>
+							<prerequisites>
+								<li>Ferny_BlackHive</li>
+								<li>Ferny_JellyMorpher</li>
+							</prerequisites>
+							<researchViewX>10.00</researchViewX>
+							<researchViewY>5.50</researchViewY>
+						</ResearchProjectDef>
+						<ResearchProjectDef>
+							<defName>Ferny_BlackJellyWall</defName>
+							<label>black jelly wall</label>
+							<tab>VanillaExpanded</tab>
+							<description>Build hardened walls from black insect jelly.</description>
+							<baseCost>500</baseCost>
+							<techLevel>Industrial</techLevel>
+							<prerequisites>
+								<li>Ferny_BlackHive</li>
+								<li>Ferny_HiveStructure</li>
+							</prerequisites>
+							<researchViewX>10.00</researchViewX>
+							<researchViewY>7.00</researchViewY>
+						</ResearchProjectDef>
+						<ResearchProjectDef>
+							<defName>Ferny_FoamBelcher</defName>
+							<label>foam belcher</label>
+							<tab>VanillaExpanded</tab>
+							<description>Grow foam belchers that spray fire-retardant foam in a cone.</description>
+							<baseCost>500</baseCost>
+							<techLevel>Industrial</techLevel>
+							<prerequisites>
+								<li>Ferny_BlackHive</li>
+								<li>Ferny_FoamPod</li>
+							</prerequisites>
+							<researchViewX>10.00</researchViewX>
+							<researchViewY>4.40</researchViewY>
+						</ResearchProjectDef>
+						<ResearchProjectDef>
+							<defName>Ferny_FreezePod</defName>
+							<label>freeze pod</label>
+							<tab>VanillaExpanded</tab>
+							<description>Grow cold-emitting freeze pods from black hive bioforms.</description>
+							<baseCost>300</baseCost>
+							<techLevel>Industrial</techLevel>
+							<prerequisites>
+								<li>Ferny_GlowPod</li>
+							</prerequisites>
+							<researchViewX>9.00</researchViewX>
+							<researchViewY>5.75</researchViewY>
+						</ResearchProjectDef>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AA_DarkGlowPod"]/researchPrerequisites/li[text()="VFEI2_BasicHivetech"]</xpath>
+					<value>
+						<li>Ferny_GlowPod</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AA_DarkLargeGlowPod"]/researchPrerequisites/li[text()="VFEI2_StandardHivetech"]</xpath>
+					<value>
+						<li>Ferny_LargeGlowPod</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AA_DarkGlowPodFormation"]/researchPrerequisites/li[text()="VFEI2_StandardHivetech"]</xpath>
+					<value>
+						<li>Ferny_GlowPodFormation</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AA_FreezePod"]/researchPrerequisites/li[text()="VFEI2_StandardHivetech"]</xpath>
+					<value>
+						<li>Ferny_FreezePod</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VFEI2_AA_ArtificialBlackHive"]/researchPrerequisites/li[text()="VFEI2_ExoticHivetech"]</xpath>
+					<value>
+						<li>Ferny_BlackHive</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AA_BioMechDisruptor"]/researchPrerequisites/li[text()="VFEI2_ExoticHivetech"]</xpath>
+					<value>
+						<li>Ferny_BioMechDisruptor</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AA_BlackCreeper"]/researchPrerequisites/li[text()="VFEI2_ExoticHivetech"]</xpath>
+					<value>
+						<li>Ferny_BlackCreeper</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AA_BlackDefiler"]/researchPrerequisites/li[text()="VFEI2_ExoticHivetech"]</xpath>
+					<value>
+						<li>Ferny_BlackDefiler</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AA_BlackJellyMorpher"]/researchPrerequisites/li[text()="VFEI2_ExoticHivetech"]</xpath>
+					<value>
+						<li>Ferny_BlackJellyMorpher</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AA_BlackJellyWall"]/researchPrerequisites/li[text()="VFEI2_ExoticHivetech"]</xpath>
+					<value>
+						<li>Ferny_BlackJellyWall</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AA_FoamBelcher"]/researchPrerequisites/li[text()="VFEI2_ExoticHivetech"]</xpath>
+					<value>
+						<li>Ferny_FoamBelcher</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VFEI2_Thumper_BlackEmpress"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Ferny_BlackHive</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
